@@ -1,0 +1,11 @@
+{
+  "_fv": 47,
+  "_type": "tab",
+  "definition": {
+    "name": "McAlec's Changed Addon",
+    "icon": {
+      "value": "CUSTOM:DevItem"
+    },
+    "showSearch": false
+  }
+}

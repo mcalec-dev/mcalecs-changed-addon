@@ -1,0 +1,27 @@
+{
+  "_fv": 47,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "texture": "screenshot_2023-08-23_144851",
+    "customModelName": "Normal",
+    "name": "Baseball Bat",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:McalecsChangedTab"
+    },
+    "harvestLevel": 0,
+    "efficiency": 2.0,
+    "attackSpeed": 1.6,
+    "enchantability": 2,
+    "damageVsEntity": 4.0,
+    "usageCount": 100,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "_fv": 47,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 208,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_mcalecs_changed_addon",
+          "text": {
+            "fixedValue": "McAlec's Changed Addon"
+          },
+          "color": {
+            "value": -14145496,
+            "falpha": 0.0
+          },
+          "x": 155,
+          "y": 65
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_thank_you_for_downloading",
+          "text": {
+            "fixedValue": "Thank you for downloading."
+          },
+          "color": {
+            "value": -10066330,
+            "falpha": 0.0
+          },
+          "x": 145,
+          "y": 135
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_close",
+          "text": "Close",
+          "onClick": {
+            "name": "AddonBookGUIButtonClose"
+          },
+          "width": 51,
+          "height": 20,
+          "x": 125,
+          "y": 175
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_next",
+          "text": "Next",
+          "width": 46,
+          "height": 20,
+          "x": 255,
+          "y": 175
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_more_pages_will_be_added_on_late",
+          "text": {
+            "fixedValue": "More pages will be added on later!"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 265,
+          "y": 175
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Search",
+          "name": "searchEngineTest",
+          "width": 120,
+          "height": 20,
+          "x": 115,
+          "y": 95
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_search",
+          "text": "Go!",
+          "onClick": {
+            "name": "AddonBookSearchButtonDisplay"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 255,
+          "y": 95
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_hint_type_test_for_a_secret_s",
+          "text": {
+            "fixedValue": "Hint: Type \"Test\" for a secret screen"
+          },
+          "color": {
+            "value": -10066330,
+            "falpha": 0.0
+          },
+          "x": 115,
+          "y": 155
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 20,
+      "sy": 20,
+      "ox": 8,
+      "oy": 8,
+      "snapOnGrid": true
+    }
+  }
+}

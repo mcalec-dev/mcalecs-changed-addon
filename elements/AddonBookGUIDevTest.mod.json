@@ -1,0 +1,79 @@
+{
+  "_fv": 47,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_untransfer",
+          "text": "untransfer",
+          "onClick": {
+            "name": "GUIDevTestUntransfur"
+          },
+          "width": 77,
+          "height": 20,
+          "x": 131,
+          "y": 175
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_exit",
+          "text": "exit",
+          "onClick": {
+            "name": "AddonBookGUIButtonClose"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 130,
+          "y": 206
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_mcalecs_dev_test_screen",
+          "text": {
+            "fixedValue": "McAlec's Dev Test Screen"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 152,
+          "y": 51
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_time_set_day",
+          "text": "time set day",
+          "onClick": {
+            "name": "GUIDevTestTimeSet"
+          },
+          "width": 87,
+          "height": 20,
+          "x": 208,
+          "y": 175
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

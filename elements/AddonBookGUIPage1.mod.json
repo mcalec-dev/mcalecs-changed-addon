@@ -1,0 +1,51 @@
+{
+  "_fv": 47,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_back",
+          "text": "Back",
+          "onClick": {
+            "name": "AddonBookGUIMain"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 135,
+          "y": 175
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_howd_you_get_here",
+          "text": {
+            "fixedValue": "How'd you get here?"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 165,
+          "y": 105
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 20,
+      "sy": 20,
+      "ox": 8,
+      "oy": 8,
+      "snapOnGrid": true
+    }
+  }
+}
