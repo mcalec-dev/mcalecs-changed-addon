@@ -95,8 +95,6 @@ public class Modelmodel<T extends Entity> extends EntityModel<T> {
 	}
 
 	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-		this.Torso.yRot = netHeadYaw / (180F / (float) Math.PI);
-		this.Torso.xRot = headPitch / (180F / (float) Math.PI);
 		this.RightArm.xRot = Mth.cos(limbSwing * 0.6662F + (float) Math.PI) * limbSwingAmount;
 		this.LeftLeg.xRot = Mth.cos(limbSwing * 1.0F) * -1.0F * limbSwingAmount;
 		this.Head.yRot = netHeadYaw / (180F / (float) Math.PI);
