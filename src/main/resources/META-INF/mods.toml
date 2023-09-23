@@ -4,13 +4,13 @@ license="MIT License"
 
 [[mods]]
 modId="mcalecs_changed_addon"
-version="0.1"
+version="0.2"
 displayName="McAlec's Changed Addon"
 credits="McAlec"
-displayURL="https://curseforge.com/minecraft/mc-mods/mcalecs-changed-addon"
+displayURL="https://modrinth.com/mod/mcalecs-changed-addon"
 logoFile="logo.png"
 authors="McAlec"
-description="Test"
+description="Addon Mod to LtxProgrammer's Changed: MC Mod"
 
 [[dependencies.mcalecs_changed_addon]]
     modId="minecraft"

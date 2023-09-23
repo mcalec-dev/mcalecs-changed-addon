@@ -462,10 +462,10 @@
   "workspaceSettings": {
     "modid": "mcalecs_changed_addon",
     "modName": "McAlec\u0027s Changed Addon",
-    "version": "0.1",
-    "description": "Test",
+    "version": "0.2a",
+    "description": "Addon Mod to LtxProgrammer\u0027s Changed: MC Mod",
     "author": "McAlec",
-    "websiteURL": "https://curseforge.com/minecraft/mc-mods/mcalecs-changed-addon",
+    "websiteURL": "https://modrinth.com/mod/mcalecs-changed-addon",
     "license": "MIT License",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
