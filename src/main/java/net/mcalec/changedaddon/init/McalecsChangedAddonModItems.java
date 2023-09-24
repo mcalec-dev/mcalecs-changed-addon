@@ -22,5 +22,5 @@ public class McalecsChangedAddonModItems {
 	public static final RegistryObject<Item> ADDON_BOOK = REGISTRY.register("addon_book", () -> new AddonBookItem());
 	public static final RegistryObject<Item> DEV_ITEM = REGISTRY.register("dev_item", () -> new DevItemItem());
 	public static final RegistryObject<Item> DEV_ENTITY_TEST_SPAWN_EGG = REGISTRY.register("dev_entity_test_spawn_egg",
-			() -> new ForgeSpawnEggItem(McalecsChangedAddonModEntities.DEV_ENTITY_TEST, -13875586, -11253505, new Item.Properties().tab(null)));
+			() -> new ForgeSpawnEggItem(McalecsChangedAddonModEntities.DEV_ENTITY_TEST, -13875586, -11253505, new Item.Properties().tab(McalecsChangedAddonModTabs.TAB_MCALECS_CHANGED_TAB)));
 }

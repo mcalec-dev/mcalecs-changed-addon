@@ -12,18 +12,24 @@ import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
+import net.minecraft.world.entity.ai.goal.OpenDoorGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
+import net.minecraft.world.entity.ai.goal.LeapAtTargetGoal;
+import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 
+import net.mcalec.changedaddon.procedures.IfPlayerIsInWaterProcedure;
 import net.mcalec.changedaddon.init.McalecsChangedAddonModEntities;
 
 public class DevEntityTestEntity extends Monster {
@@ -36,6 +42,7 @@ public class DevEntityTestEntity extends Monster {
 		maxUpStep = 0.6f;
 		xpReward = 0;
 		setNoAi(false);
+		setPersistenceRequired();
 	}
 
 	@Override
@@ -46,21 +53,42 @@ public class DevEntityTestEntity extends Monster {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, true) {
+		this.getNavigation().getNodeEvaluator().setCanOpenDoors(true);
+		this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, ServerPlayer.class, false, false));
+		this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, Player.class, false, false));
+		this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 1.5, false) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
 				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
 		});
-		this.targetSelector.addGoal(2, new HurtByTargetGoal(this).setAlertOthers());
-		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 1.2));
-		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
-		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Player.class, true, true));
+		this.targetSelector.addGoal(4, new HurtByTargetGoal(this).setAlertOthers());
+		this.goalSelector.addGoal(5, new LeapAtTargetGoal(this, (float) 0.5));
+		this.goalSelector.addGoal(6, new RandomStrollGoal(this, 1));
+		this.goalSelector.addGoal(7, new OpenDoorGoal(this, true));
+		this.goalSelector.addGoal(8, new OpenDoorGoal(this, false));
+		this.goalSelector.addGoal(9, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(10, new FloatGoal(this) {
+			@Override
+			public boolean canUse() {
+				double x = DevEntityTestEntity.this.getX();
+				double y = DevEntityTestEntity.this.getY();
+				double z = DevEntityTestEntity.this.getZ();
+				Entity entity = DevEntityTestEntity.this;
+				Level world = DevEntityTestEntity.this.level;
+				return super.canUse() && IfPlayerIsInWaterProcedure.execute(entity);
+			}
+		});
 	}
 
 	@Override
 	public MobType getMobType() {
 		return MobType.UNDEFINED;
+	}
+
+	@Override
+	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
+		return false;
 	}
 
 	@Override

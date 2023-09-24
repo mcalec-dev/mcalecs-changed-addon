@@ -8,6 +8,7 @@ version="0.2"
 displayName="McAlec's Changed Addon"
 credits="McAlec"
 displayURL="https://modrinth.com/mod/mcalecs-changed-addon"
+updateJSONURL="https://raw.githubusercontent.com/McAlec1/MCA-Update-Check/main/MCA-Update-Check"
 logoFile="logo.png"
 authors="McAlec"
 description="Addon Mod to LtxProgrammer's Changed: MC Mod"
@@ -20,5 +21,11 @@ description="Addon Mod to LtxProgrammer's Changed: MC Mod"
     side="BOTH"
 
 
+[[dependencies.mcalecs_changed_addon]]
+    modId="changed"
+    mandatory=true
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 
 

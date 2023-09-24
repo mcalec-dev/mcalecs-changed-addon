@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "mcalecs_changed_addon:addon_book",
+    "mcalecs_changed_addon:dev_item"
+  ]
+}

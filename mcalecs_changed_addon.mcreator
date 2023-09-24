@@ -363,6 +363,68 @@
           "src/main/java/net/mcalec/changedaddon/world/features/TerminatedLabFeature.java"
         ]
       }
+    },
+    {
+      "name": "ModItems",
+      "type": "tag",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mod_items",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mcalecs_changed_addon/tags/items/mod_items.json"
+        ]
+      },
+      "path": "~/Tags"
+    },
+    {
+      "name": "ModEntitys",
+      "type": "tag",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mod_entitys",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mcalecs_changed_addon/tags/entity_types/mod_entitys.json"
+        ]
+      },
+      "path": "~/Tags"
+    },
+    {
+      "name": "LatexEntitys",
+      "type": "tag",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "latex_entitys",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mcalecs_changed_addon/tags/entity_types/latexentity.json"
+        ]
+      },
+      "path": "~/Tags"
+    },
+    {
+      "name": "IfPlayerIsInWater",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "if_player_is_in_water",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcalec/changedaddon/procedures/IfPlayerIsInWaterProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -502,6 +564,10 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Tags",
+        "children": []
       }
     ]
   },
@@ -515,8 +581,11 @@
     "license": "MIT License",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "updateURL": "https://raw.githubusercontent.com/McAlec1/MCA-Update-Check/main/MCA-Update-Check",
     "modPicture": "mca-logo",
-    "requiredMods": [],
+    "requiredMods": [
+      "changed"
+    ],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
