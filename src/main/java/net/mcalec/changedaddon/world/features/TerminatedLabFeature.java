@@ -42,17 +42,17 @@ public class TerminatedLabFeature extends Feature<NoneFeatureConfiguration> {
 		return PLACED_FEATURE;
 	}
 
-	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("savanna_plateau"), new ResourceLocation("forest"), new ResourceLocation("sunflower_plains"), new ResourceLocation("sparse_jungle"),
-			new ResourceLocation("taiga"), new ResourceLocation("birch_forest"), new ResourceLocation("swamp"), new ResourceLocation("old_growth_birch_forest"), new ResourceLocation("grove"), new ResourceLocation("windswept_hills"),
-			new ResourceLocation("old_growth_pine_taiga"), new ResourceLocation("plains"), new ResourceLocation("savanna"), new ResourceLocation("windswept_savanna"), new ResourceLocation("windswept_forest"), new ResourceLocation("jungle"),
-			new ResourceLocation("windswept_gravelly_hills"), new ResourceLocation("meadow"), new ResourceLocation("old_growth_spruce_taiga"));
+	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("savanna_plateau"), new ResourceLocation("forest"), new ResourceLocation("sunflower_plains"), new ResourceLocation("taiga"),
+			new ResourceLocation("birch_forest"), new ResourceLocation("old_growth_birch_forest"), new ResourceLocation("grove"), new ResourceLocation("windswept_hills"), new ResourceLocation("old_growth_pine_taiga"), new ResourceLocation("plains"),
+			new ResourceLocation("savanna"), new ResourceLocation("windswept_savanna"), new ResourceLocation("windswept_forest"), new ResourceLocation("windswept_gravelly_hills"), new ResourceLocation("meadow"),
+			new ResourceLocation("old_growth_spruce_taiga"));
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
 	private final List<Block> base_blocks;
 	private StructureTemplate template = null;
 
 	public TerminatedLabFeature() {
 		super(NoneFeatureConfiguration.CODEC);
-		base_blocks = List.of(Blocks.GRASS_BLOCK, Blocks.DIRT);
+		base_blocks = List.of(Blocks.GRASS_BLOCK);
 	}
 
 	@Override
@@ -64,7 +64,7 @@ public class TerminatedLabFeature extends Feature<NoneFeatureConfiguration> {
 		if (template == null)
 			return false;
 		boolean anyPlaced = false;
-		if ((context.random().nextInt(1000000) + 1) <= 4500) {
+		if ((context.random().nextInt(1000000) + 1) <= 2500) {
 			int count = context.random().nextInt(1) + 1;
 			for (int a = 0; a < count; a++) {
 				int i = context.origin().getX() + context.random().nextInt(16);
