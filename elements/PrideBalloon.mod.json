@@ -31,10 +31,7 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onRightClickedInAir": {
-      "name": "PrideBalloonItemInHandTick"
-    },
-    "onRightClickedOnBlock": {
+    "onItemInInventoryTick": {
       "name": "PrideBalloonItemInHandTick"
     },
     "onItemInUseTick": {
