@@ -43,16 +43,16 @@ public class TerminatedLabFeature extends Feature<NoneFeatureConfiguration> {
 	}
 
 	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("savanna_plateau"), new ResourceLocation("forest"), new ResourceLocation("sunflower_plains"), new ResourceLocation("sparse_jungle"),
-			new ResourceLocation("taiga"), new ResourceLocation("birch_forest"), new ResourceLocation("swamp"), new ResourceLocation("badlands"), new ResourceLocation("old_growth_birch_forest"), new ResourceLocation("grove"),
-			new ResourceLocation("windswept_hills"), new ResourceLocation("old_growth_pine_taiga"), new ResourceLocation("plains"), new ResourceLocation("savanna"), new ResourceLocation("windswept_savanna"), new ResourceLocation("windswept_forest"),
-			new ResourceLocation("jungle"), new ResourceLocation("windswept_gravelly_hills"), new ResourceLocation("desert"), new ResourceLocation("meadow"), new ResourceLocation("old_growth_spruce_taiga"));
+			new ResourceLocation("taiga"), new ResourceLocation("birch_forest"), new ResourceLocation("swamp"), new ResourceLocation("old_growth_birch_forest"), new ResourceLocation("grove"), new ResourceLocation("windswept_hills"),
+			new ResourceLocation("old_growth_pine_taiga"), new ResourceLocation("plains"), new ResourceLocation("savanna"), new ResourceLocation("windswept_savanna"), new ResourceLocation("windswept_forest"), new ResourceLocation("jungle"),
+			new ResourceLocation("windswept_gravelly_hills"), new ResourceLocation("meadow"), new ResourceLocation("old_growth_spruce_taiga"));
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
 	private final List<Block> base_blocks;
 	private StructureTemplate template = null;
 
 	public TerminatedLabFeature() {
 		super(NoneFeatureConfiguration.CODEC);
-		base_blocks = List.of(Blocks.GRASS_BLOCK, Blocks.STONE, Blocks.SAND, Blocks.RED_SAND, Blocks.DIRT, Blocks.COARSE_DIRT);
+		base_blocks = List.of(Blocks.GRASS_BLOCK, Blocks.DIRT);
 	}
 
 	@Override

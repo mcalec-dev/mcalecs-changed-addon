@@ -20,27 +20,12 @@
         "value": "Blocks.GRASS"
       },
       {
-        "value": "Blocks.STONE#0"
-      },
-      {
-        "value": "Blocks.SAND#0"
-      },
-      {
-        "value": "Blocks.SAND#1"
-      },
-      {
         "value": "Blocks.DIRT#0"
-      },
-      {
-        "value": "Blocks.DIRT#1"
       }
     ],
     "restrictionBiomes": [
       {
         "value": "birch_forest"
-      },
-      {
-        "value": "desert"
       },
       {
         "value": "forest"
@@ -95,9 +80,6 @@
       },
       {
         "value": "mutated_savanna"
-      },
-      {
-        "value": "badlands"
       }
     ],
     "ignoreBlocks": "STRUCTURE_BLOCK"
