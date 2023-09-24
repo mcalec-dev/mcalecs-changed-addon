@@ -439,6 +439,53 @@
           "src/main/resources/data/mcalecs_changed_addon/advancements/made_baseball_bat.json"
         ]
       }
+    },
+    {
+      "name": "PrideBalloonItemInHandTick",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pride_balloon_item_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcalec/changedaddon/procedures/PrideBalloonItemInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "PrideBalloon",
+      "type": "item",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pride_balloon",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mcalecs_changed_addon/models/item/pride_balloon.json",
+          "src/main/java/net/mcalec/changedaddon/item/PrideBalloonItem.java"
+        ]
+      },
+      "path": "~/Items"
     }
   ],
   "variable_elements": [],
@@ -470,6 +517,7 @@
       "advancements.made_baseball_bat.title": "Made Baseball Bat",
       "item.mcalecs_changed_addon.dev_item": "Dev Item",
       "gui.mcalecs_changed_addon.addon_book_gui_dev_test.button_time_set_day": "time set day",
+      "item.mcalecs_changed_addon.pride_balloon": "Pride Balloon",
       "item.mcalecs_changed_addon.addon_book": "McAlec\u0027s Changed Addon Book",
       "advancements.downloaded_mod.title": "McAlec\u0027s Changed Addon",
       "itemGroup.tabmcalecs_changed_tab": "McAlec\u0027s Changed Addon",
@@ -505,6 +553,7 @@
       "advancements.made_baseball_bat.title": "Made Baseball Bat",
       "item.mcalecs_changed_addon.dev_item": "Dev Item",
       "gui.mcalecs_changed_addon.addon_book_gui_dev_test.button_time_set_day": "time set day",
+      "item.mcalecs_changed_addon.pride_balloon": "Pride Balloon",
       "item.mcalecs_changed_addon.addon_book": "McAlec\u0027s Changed Addon Book",
       "advancements.downloaded_mod.title": "McAlec\u0027s Changed Addon",
       "itemGroup.tabmcalecs_changed_tab": "McAlec\u0027s Changed Addon",

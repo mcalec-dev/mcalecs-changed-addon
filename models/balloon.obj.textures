@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "m_af3b5212-6c9d-1e26-e871-4aeee1d27888": "balloon"
+      },
+      "name": "default"
+    }
+  }
+}
