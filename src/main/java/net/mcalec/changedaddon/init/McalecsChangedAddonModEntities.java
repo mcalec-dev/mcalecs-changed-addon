@@ -25,7 +25,7 @@ public class McalecsChangedAddonModEntities {
 	public static final RegistryObject<EntityType<DevEntityTestEntity>> DEV_ENTITY_TEST = register("dev_entity_test",
 			EntityType.Builder.<DevEntityTestEntity>of(DevEntityTestEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DevEntityTestEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1.9f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
