@@ -10,5 +10,5 @@ import net.minecraft.world.level.GameRules;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class McalecsChangedAddonModGameRules {
-	public static final GameRules.Key<GameRules.BooleanValue> GIVE_INFO_BOOK = GameRules.register("giveInfoBook", GameRules.Category.PLAYER, GameRules.BooleanValue.create(false));
+	public static final GameRules.Key<GameRules.BooleanValue> GIVE_INFO_BOOK = GameRules.register("giveInfoBook", GameRules.Category.PLAYER, GameRules.BooleanValue.create(true));
 }

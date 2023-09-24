@@ -50,7 +50,7 @@ public class AddonBookGUIScreen extends AbstractContainerScreen<AddonBookGUIMenu
 		super.render(ms, mouseX, mouseY, partialTicks);
 		searchEngineTest.render(ms, mouseX, mouseY, partialTicks);
 		this.renderTooltip(ms, mouseX, mouseY);
-		if (mouseX > leftPos + 155 && mouseX < leftPos + 179 && mouseY > topPos + 138 && mouseY < topPos + 162)
+		if (mouseX > leftPos + 95 && mouseX < leftPos + 119 && mouseY > topPos + 138 && mouseY < topPos + 162)
 			this.renderTooltip(ms, new TranslatableComponent("gui.mcalecs_changed_addon.addon_book_gui.tooltip_more_pages_will_be_added_on_late"), mouseX, mouseY);
 	}
 
@@ -86,6 +86,7 @@ public class AddonBookGUIScreen extends AbstractContainerScreen<AddonBookGUIMenu
 		this.font.draw(poseStack, new TranslatableComponent("gui.mcalecs_changed_addon.addon_book_gui.label_mcalecs_changed_addon"), 45, 28, -14145496);
 		this.font.draw(poseStack, new TranslatableComponent("gui.mcalecs_changed_addon.addon_book_gui.label_thank_you_for_downloading"), 35, 98, -10066330);
 		this.font.draw(poseStack, new TranslatableComponent("gui.mcalecs_changed_addon.addon_book_gui.label_hint_type_test_for_a_secret_s"), 5, 118, -10066330);
+		this.font.draw(poseStack, new TranslatableComponent("gui.mcalecs_changed_addon.addon_book_gui.label_i"), 105, 148, -12829636);
 	}
 
 	@Override

@@ -3,10 +3,10 @@
   "_type": "gamerule",
   "definition": {
     "type": "Logic",
-    "displayName": "Give Player McAlec's Changed Addon Book on Start",
+    "displayName": "MCA Book on Start",
     "description": "Gives McAlec's Changed Addon Book on the start of a new world or new player join",
     "category": "PLAYER",
-    "defaultValueLogic": false,
+    "defaultValueLogic": true,
     "defaultValueNumber": 0
   }
 }

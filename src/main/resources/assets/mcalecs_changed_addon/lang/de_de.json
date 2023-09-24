@@ -8,6 +8,7 @@
   "gui.mcalecs_changed_addon.addon_book_gui_dev_test.button_untransfer": "untransfer",
   "gui.mcalecs_changed_addon.addon_book_gui.secretPage": "",
   "entity.mcalecs_changed_addon.dev_entity_test": "Dev Entity Test",
+  "gui.mcalecs_changed_addon.addon_book_gui.label_i": "i",
   "gui.mcalecs_changed_addon.addon_book_gui.label_hint_type_test_for_a_secret_s": "Hint: Type \"Test\" for a secret screen",
   "gamerule.giveInfoBook": "Give Player McAlec\u0027s Changed Addon Book on Start",
   "gui.mcalecs_changed_addon.addon_book_gui_page_1.button_next": "Next",
