@@ -2,10 +2,10 @@
   "_fv": 47,
   "_type": "structure",
   "definition": {
-    "structure": "dev_lab",
+    "structure": "terminated_lab",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First block",
-    "spawnProbability": 15000,
+    "spawnProbability": 14000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",

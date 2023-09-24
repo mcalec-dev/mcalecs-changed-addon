@@ -53,11 +53,11 @@ public class TerminatedLabFeature extends Feature<NoneFeatureConfiguration> {
 		if (!generate_dimensions.contains(context.level().getLevel().dimension()))
 			return false;
 		if (template == null)
-			template = context.level().getLevel().getStructureManager().getOrCreate(new ResourceLocation("mcalecs_changed_addon", "dev_lab"));
+			template = context.level().getLevel().getStructureManager().getOrCreate(new ResourceLocation("mcalecs_changed_addon", "terminated_lab"));
 		if (template == null)
 			return false;
 		boolean anyPlaced = false;
-		if ((context.random().nextInt(1000000) + 1) <= 15000) {
+		if ((context.random().nextInt(1000000) + 1) <= 14000) {
 			int count = context.random().nextInt(1) + 1;
 			for (int a = 0; a < count; a++) {
 				int i = context.origin().getX() + context.random().nextInt(16);
