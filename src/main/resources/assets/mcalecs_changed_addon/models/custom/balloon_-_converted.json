@@ -9,12 +9,12 @@
       "name": "BalloonSegment1",
       "from": [
         6,
-        16,
+        20,
         6
       ],
       "to": [
         11,
-        17,
+        21,
         11
       ],
       "rotation": {
@@ -22,7 +22,7 @@
         "axis": "y",
         "origin": [
           8,
-          2,
+          0,
           8
         ]
       },
@@ -87,12 +87,12 @@
       "name": "BalloonSegment2",
       "from": [
         7,
-        17,
+        21,
         7
       ],
       "to": [
         10,
-        18,
+        22,
         10
       ],
       "rotation": {
@@ -100,7 +100,7 @@
         "axis": "y",
         "origin": [
           8,
-          2,
+          0,
           8
         ]
       },
@@ -165,12 +165,12 @@
       "name": "BalloonSegment3",
       "from": [
         5,
-        9,
+        13,
         5
       ],
       "to": [
         12,
-        16,
+        20,
         12
       ],
       "rotation": {
@@ -178,7 +178,7 @@
         "axis": "y",
         "origin": [
           8,
-          2,
+          0,
           8
         ]
       },
@@ -243,12 +243,12 @@
       "name": "BalloonSegment4",
       "from": [
         6,
-        8,
+        12,
         6
       ],
       "to": [
         11,
-        9,
+        13,
         11
       ],
       "rotation": {
@@ -256,7 +256,7 @@
         "axis": "y",
         "origin": [
           8,
-          2,
+          0,
           8
         ]
       },
@@ -321,12 +321,12 @@
       "name": "BalloonSegment5",
       "from": [
         7,
-        7,
+        11,
         7
       ],
       "to": [
         10,
-        8,
+        12,
         10
       ],
       "rotation": {
@@ -334,7 +334,7 @@
         "axis": "y",
         "origin": [
           8,
-          2,
+          0,
           8
         ]
       },
@@ -399,12 +399,12 @@
       "name": "StringSegment1",
       "from": [
         8,
-        5,
+        9,
         8
       ],
       "to": [
         9,
-        7,
+        11,
         9
       ],
       "rotation": {
@@ -412,8 +412,8 @@
         "axis": "y",
         "origin": [
           8,
-          5.5,
-          8.5
+          0,
+          8
         ]
       },
       "faces": {
@@ -477,21 +477,21 @@
       "name": "StringSegment2",
       "from": [
         7.5,
-        3.5,
+        7.5,
         8
       ],
       "to": [
         8.5,
-        5.5,
+        9.5,
         9
       ],
       "rotation": {
         "angle": 0,
         "axis": "y",
         "origin": [
-          7.5,
-          4,
-          8.5
+          8,
+          0,
+          8
         ]
       },
       "faces": {
@@ -555,21 +555,21 @@
       "name": "StringSegment3",
       "from": [
         7,
-        2,
+        6,
         8
       ],
       "to": [
         8,
-        4,
+        8,
         9
       ],
       "rotation": {
         "angle": 0,
         "axis": "y",
         "origin": [
-          7,
-          3,
-          8.5
+          8,
+          0,
+          8
         ]
       },
       "faces": {
@@ -633,21 +633,21 @@
       "name": "StringSegment4",
       "from": [
         6.5,
-        1,
+        5,
         8
       ],
       "to": [
         7.5,
-        3,
+        7,
         9
       ],
       "rotation": {
         "angle": 0,
         "axis": "y",
         "origin": [
-          6.5,
-          2,
-          8.5
+          8,
+          0,
+          8
         ]
       },
       "faces": {
@@ -711,21 +711,21 @@
       "name": "StringSegment5",
       "from": [
         6,
-        0,
+        4,
         8
       ],
       "to": [
         7,
-        2,
+        6,
         9
       ],
       "rotation": {
         "angle": 0,
         "axis": "y",
         "origin": [
-          6.5,
-          2,
-          8.5
+          8,
+          0,
+          8
         ]
       },
       "faces": {
@@ -791,7 +791,7 @@
       "name": "Balloon",
       "origin": [
         6,
-        0,
+        4,
         8.5
       ],
       "color": 0,
@@ -801,7 +801,7 @@
           "name": "Base",
           "origin": [
             8.5,
-            7,
+            11,
             8.5
           ],
           "color": 0,
@@ -817,7 +817,7 @@
         {
           "name": "String",
           "origin": [
-            6,
+            8,
             0,
             8.5
           ],

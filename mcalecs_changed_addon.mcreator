@@ -137,7 +137,8 @@
         "files": [
           "src/main/resources/data/mcalecs_changed_addon/advancements/downloaded_mod.json"
         ]
-      }
+      },
+      "path": "~/Advancements"
     },
     {
       "name": "GiveInfoBook",
@@ -336,7 +337,7 @@
           "src/main/java/net/mcalec/changedaddon/item/DevItemItem.java"
         ]
       },
-      "path": "~/Items"
+      "path": "~/Items/Dev Items"
     },
     {
       "name": "DevEntityTest",
@@ -351,7 +352,8 @@
           "src/main/resources/assets/mcalecs_changed_addon/models/item/dev_entity_test_spawn_egg.json",
           "src/main/java/net/mcalec/changedaddon/entity/DevEntityTestEntity.java"
         ]
-      }
+      },
+      "path": "~/Entities/Dev Entity Test"
     },
     {
       "name": "TerminatedLab",
@@ -363,7 +365,8 @@
         "files": [
           "src/main/java/net/mcalec/changedaddon/world/features/TerminatedLabFeature.java"
         ]
-      }
+      },
+      "path": "~/Structures"
     },
     {
       "name": "ModItems",
@@ -425,7 +428,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Entities/Dev Entity Test"
     },
     {
       "name": "MadeBaseballBat",
@@ -438,7 +442,8 @@
         "files": [
           "src/main/resources/data/mcalecs_changed_addon/advancements/made_baseball_bat.json"
         ]
-      }
+      },
+      "path": "~/Advancements"
     },
     {
       "name": "PrideBalloonItemInHandTick",
@@ -474,7 +479,7 @@
           }
         ]
       },
-      "path": "~/Items"
+      "path": "~/Items/Pride Balloon"
     },
     {
       "name": "PrideBalloon",
@@ -489,7 +494,7 @@
           "src/main/java/net/mcalec/changedaddon/item/PrideBalloonItem.java"
         ]
       },
-      "path": "~/Items"
+      "path": "~/Items/Pride Balloon"
     }
   ],
   "variable_elements": [],
@@ -577,7 +582,16 @@
       },
       {
         "name": "Items",
-        "children": []
+        "children": [
+          {
+            "name": "Pride Balloon",
+            "children": []
+          },
+          {
+            "name": "Dev Items",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Tools",
@@ -638,6 +652,23 @@
       },
       {
         "name": "Tags",
+        "children": []
+      },
+      {
+        "name": "Entities",
+        "children": [
+          {
+            "name": "Dev Entity Test",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Advancements",
+        "children": []
+      },
+      {
+        "name": "Structures",
         "children": []
       }
     ]
