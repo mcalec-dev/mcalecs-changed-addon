@@ -2,27 +2,27 @@
   "display": {
     "background": "minecraft:textures/block/stone.png",
     "icon": {
-      "item": "mcalecs_changed_addon:dev_item"
+      "item": "mcalecs_changed_addon:baseball_bat"
     },
     "title": {
-      "translate": "advancements.downloaded_mod.title"
+      "translate": "advancements.made_baseball_bat.title"
     },
     "description": {
-      "translate": "advancements.downloaded_mod.descr"
+      "translate": "advancements.made_baseball_bat.descr"
     },
     "frame": "task",
     "show_toast": true,
-    "announce_to_chat": false,
+    "announce_to_chat": true,
     "hidden": true
   },
   "criteria": {
-    "downloaded_mod": {
+    "made_baseball_bat": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "mcalecs_changed_addon:addon_book"
+              "mcalecs_changed_addon:baseball_bat"
             ],
             "count": {
               "min": 1,
