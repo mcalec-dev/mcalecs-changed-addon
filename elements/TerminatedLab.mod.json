@@ -4,8 +4,8 @@
   "definition": {
     "structure": "terminated_lab",
     "randomlyRotateStructure": true,
-    "surfaceDetectionType": "First block",
-    "spawnProbability": 14000,
+    "surfaceDetectionType": "First motion blocking block",
+    "spawnProbability": 8000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
