@@ -29,6 +29,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 
 import net.mcalec.changedaddon.procedures.IfPlayerIsInWaterProcedure;
+import net.mcalec.changedaddon.procedures.AquaticMovementProcedureProcedure;
 import net.mcalec.changedaddon.init.McalecsChangedAddonModEntities;
 
 public class DevEntityTestEntity extends Monster {
@@ -97,6 +98,12 @@ public class DevEntityTestEntity extends Monster {
 	@Override
 	public SoundEvent getDeathSound() {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+	}
+
+	@Override
+	public void baseTick() {
+		super.baseTick();
+		AquaticMovementProcedureProcedure.execute(this);
 	}
 
 	public static void init() {
