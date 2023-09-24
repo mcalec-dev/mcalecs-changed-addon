@@ -23,7 +23,7 @@ public class PrideBalloonItem extends Item {
 
 	@Override
 	public UseAnim getUseAnimation(ItemStack itemstack) {
-		return UseAnim.BLOCK;
+		return UseAnim.SPEAR;
 	}
 
 	@Override
@@ -34,14 +34,14 @@ public class PrideBalloonItem extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		PrideBalloonItemInHandTickProcedure.execute(world, x, y, z);
+		PrideBalloonItemInHandTickProcedure.execute(world, x, y, z, entity);
 		return ar;
 	}
 
 	@Override
 	public InteractionResult useOn(UseOnContext context) {
 		super.useOn(context);
-		PrideBalloonItemInHandTickProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ());
+		PrideBalloonItemInHandTickProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), context.getPlayer());
 		return InteractionResult.SUCCESS;
 	}
 
@@ -49,6 +49,6 @@ public class PrideBalloonItem extends Item {
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
 		if (selected)
-			PrideBalloonItemInHandTickProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ());
+			PrideBalloonItemInHandTickProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
 	}
 }
