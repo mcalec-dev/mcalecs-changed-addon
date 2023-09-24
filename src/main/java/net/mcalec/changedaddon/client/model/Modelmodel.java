@@ -53,6 +53,11 @@ public class Modelmodel<T extends Entity> extends EntityModel<T> {
 				CubeListBuilder.create().texOffs(38, 0).addBox(2.0F, -33.75F, -14.0F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(36, 5).addBox(2.0F, -33.0F, -14.5F, 1.0F, 8.0F, 3.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -0.5236F, 0.6545F, 0.0F));
 		PartDefinition Torso = partdefinition.addOrReplaceChild("Torso", CubeListBuilder.create().texOffs(0, 20).addBox(-4.0F, -12.0F, -2.0F, 8.0F, 12.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 11.0F, 0.0F));
+		PartDefinition Tail = Torso.addOrReplaceChild("Tail", CubeListBuilder.create(), PartPose.offset(0.0F, -1.0F, 0.0F));
+		PartDefinition TailSegment2_r1 = Tail.addOrReplaceChild("TailSegment2_r1", CubeListBuilder.create().texOffs(44, 26).addBox(-1.5F, 0.0F, -1.0F, 3.0F, 7.0F, 3.0F, new CubeDeformation(0.0F)),
+				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 1.1781F, 0.0F, 0.0F));
+		PartDefinition TailSegment1_r1 = Tail.addOrReplaceChild("TailSegment1_r1", CubeListBuilder.create().texOffs(28, 27).addBox(-1.5F, 0.25F, -1.5F, 3.0F, 6.0F, 3.0F, new CubeDeformation(0.0F)),
+				PartPose.offsetAndRotation(0.0F, 2.0F, 6.0F, 1.4835F, 0.0F, 0.0F));
 		PartDefinition LeftArm = partdefinition.addOrReplaceChild("LeftArm", CubeListBuilder.create().texOffs(0, 40).addBox(0.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(4.0F, -1.0F, 0.0F));
 		PartDefinition LeftFingers = LeftArm.addOrReplaceChild("LeftFingers",
 				CubeListBuilder.create().texOffs(20, 37).addBox(7.0F, -12.0F, -2.0F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(20, 37).addBox(7.0F, -12.0F, -0.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(20, 37)
