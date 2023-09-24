@@ -2,9 +2,9 @@
   "_fv": 47,
   "_type": "item",
   "definition": {
-    "renderType": 2,
+    "renderType": 1,
     "texture": "prideballoon",
-    "customModelName": "balloon:default",
+    "customModelName": "balloon_-_converted:default",
     "customProperties": {},
     "states": [],
     "name": "Pride Balloon",
@@ -31,6 +31,12 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "PrideBalloonItemInHandTick"
+    },
+    "onRightClickedOnBlock": {
+      "name": "PrideBalloonItemInHandTick"
+    },
     "onItemInUseTick": {
       "name": "PrideBalloonItemInHandTick"
     },
