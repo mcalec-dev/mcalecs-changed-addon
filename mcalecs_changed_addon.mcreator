@@ -351,6 +351,18 @@
           "src/main/java/net/mcalec/changedaddon/entity/DevEntityTestEntity.java"
         ]
       }
+    },
+    {
+      "name": "TerminatedLab",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terminated_lab",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcalec/changedaddon/world/features/TerminatedLabFeature.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],

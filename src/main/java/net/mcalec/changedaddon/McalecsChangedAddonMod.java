@@ -28,6 +28,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcalec.changedaddon.init.McalecsChangedAddonModTabs;
 import net.mcalec.changedaddon.init.McalecsChangedAddonModItems;
+import net.mcalec.changedaddon.init.McalecsChangedAddonModFeatures;
 import net.mcalec.changedaddon.init.McalecsChangedAddonModEntities;
 
 import java.util.function.Supplier;
@@ -48,6 +49,8 @@ public class McalecsChangedAddonMod {
 
 		McalecsChangedAddonModItems.REGISTRY.register(bus);
 		McalecsChangedAddonModEntities.REGISTRY.register(bus);
+
+		McalecsChangedAddonModFeatures.REGISTRY.register(bus);
 
 	}
 
