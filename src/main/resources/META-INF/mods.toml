@@ -20,5 +20,11 @@ description="Addon Mod to LtxProgrammer's Changed: MC Mod"
     side="BOTH"
 
 
+[[dependencies.mcalecs_changed_addon]]
+    modId="changed"
+    mandatory=true
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 
 

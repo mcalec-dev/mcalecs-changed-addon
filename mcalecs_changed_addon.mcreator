@@ -704,7 +704,9 @@
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "modPicture": "mca-logo",
-    "requiredMods": [],
+    "requiredMods": [
+      "changed"
+    ],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
