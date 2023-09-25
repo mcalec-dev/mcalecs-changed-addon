@@ -3,15 +3,15 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "McAlec's Changed Addon",
-    "achievementDescription": "You downloaded McAlec's Changed Addon (MCA)!",
+    "achievementDescription": "You downloaded McAlec's Changed Addon (MCA) by McAlec!",
     "achievementIcon": {
       "value": "CUSTOM:DevItem"
     },
     "background": "Default",
     "disableDisplay": false,
-    "showPopup": true,
-    "announceToChat": true,
-    "hideIfNotCompleted": true,
+    "showPopup": false,
+    "announceToChat": false,
+    "hideIfNotCompleted": false,
     "rewardLoot": [],
     "rewardRecipes": [],
     "rewardFunction": "No function",
@@ -20,6 +20,6 @@
     "parent": {
       "value": "No parent: root"
     },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_in_inventory\" x=\"15\" y=\"153\"><value name=\"amount_l\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"amount_h\"><block type=\"math_number\"><field name=\"NUM\">9</field></block></value><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:AddonBook</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"dimension_entered\" x=\"33\" y=\"114\"><field name=\"dimension\">Surface</field><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
   }
 }
