@@ -696,7 +696,7 @@
   "workspaceSettings": {
     "modid": "mcalecs_changed_addon",
     "modName": "McAlec\u0027s Changed Addon",
-    "version": "0.2a",
+    "version": "0.2b",
     "description": "Addon Mod to LtxProgrammer\u0027s Changed: MC Mod",
     "author": "McAlec",
     "websiteURL": "https://modrinth.com/mod/mcalecs-changed-addon",
@@ -704,9 +704,7 @@
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "modPicture": "mca-logo",
-    "requiredMods": [
-      "changed"
-    ],
+    "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
