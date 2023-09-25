@@ -1,6 +1,5 @@
 {
   "display": {
-    "background": "minecraft:textures/block/stone.png",
     "icon": {
       "item": "mcalecs_changed_addon:baseball_bat"
     },
@@ -32,5 +31,6 @@
         ]
       }
     }
-  }
+  },
+  "parent": "mcalecs_changed_addon:downloaded_mod"
 }

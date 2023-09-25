@@ -3,14 +3,14 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "McAlec's Changed Addon",
-    "achievementDescription": "You used the information book!",
+    "achievementDescription": "You downloaded McAlec's Changed Addon (MCA)!",
     "achievementIcon": {
       "value": "CUSTOM:DevItem"
     },
     "background": "Default",
     "disableDisplay": false,
     "showPopup": true,
-    "announceToChat": false,
+    "announceToChat": true,
     "hideIfNotCompleted": true,
     "rewardLoot": [],
     "rewardRecipes": [],

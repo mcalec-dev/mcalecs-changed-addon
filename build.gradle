@@ -103,7 +103,6 @@ dependencies {
     implementation fg.deobf("curse.maven:better-third-person-435044:4177087") // Better Third Person Mod
     implementation fg.deobf("curse.maven:terrablender-563928:3957976") // TerraBlender Mod
     implementation fg.deobf("curse.maven:textrues-rubidium-options-663125:4743528") // TexTrues Rubidium Options Mod
-    implementation fg.deobf("curse.maven:rubidium-extra-654373:4513591") // Rubidium Extra Mod
     implementation fg.deobf("curse.maven:worldedit-225608:3697298") // WorldEdit Mod
     implementation fg.deobf("maven.modrinth:NRjRiSSD:AK7fR5Ja") // Memory Leak Fix Mod (Modrinth)
     implementation fg.deobf("maven.modrinth:QdG47OkI:EglYgeMq") // Model Gap Fix Mod (Modrinth)
