@@ -13,7 +13,7 @@ import net.minecraft.client.Minecraft;
 
 import net.mcalec.changedaddon.world.inventory.AddonBookGUIDevTestMenu;
 import net.mcalec.changedaddon.network.AddonBookGUIDevTestButtonMessage;
-import net.mcalec.changedaddon.McalecsChangedAddonMod;
+import net.mcalec.changedaddon.McalecsChangedMod;
 
 import java.util.HashMap;
 
@@ -40,7 +40,7 @@ public class AddonBookGUIDevTestScreen extends AbstractContainerScreen<AddonBook
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("mcalecs_changed_addon:textures/screens/addon_book_gui_dev_test.png");
+	private static final ResourceLocation texture = new ResourceLocation("mcalecs_changed:textures/screens/addon_book_gui_dev_test.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -75,7 +75,7 @@ public class AddonBookGUIDevTestScreen extends AbstractContainerScreen<AddonBook
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, new TranslatableComponent("gui.mcalecs_changed_addon.addon_book_gui_dev_test.label_mcalecs_dev_test_screen"), 26, 14, -16777216);
+		this.font.draw(poseStack, new TranslatableComponent("gui.mcalecs_changed.addon_book_gui_dev_test.label_mcalecs_dev_test_screen"), 26, 14, -16777216);
 	}
 
 	@Override
@@ -88,25 +88,25 @@ public class AddonBookGUIDevTestScreen extends AbstractContainerScreen<AddonBook
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		button_untransfer = new Button(this.leftPos + 5, this.topPos + 138, 77, 20, new TranslatableComponent("gui.mcalecs_changed_addon.addon_book_gui_dev_test.button_untransfer"), e -> {
+		button_untransfer = new Button(this.leftPos + 5, this.topPos + 138, 77, 20, new TranslatableComponent("gui.mcalecs_changed.addon_book_gui_dev_test.button_untransfer"), e -> {
 			if (true) {
-				McalecsChangedAddonMod.PACKET_HANDLER.sendToServer(new AddonBookGUIDevTestButtonMessage(0, x, y, z));
+				McalecsChangedMod.PACKET_HANDLER.sendToServer(new AddonBookGUIDevTestButtonMessage(0, x, y, z));
 				AddonBookGUIDevTestButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		});
 		guistate.put("button:button_untransfer", button_untransfer);
 		this.addRenderableWidget(button_untransfer);
-		button_exit = new Button(this.leftPos + 4, this.topPos + 169, 46, 20, new TranslatableComponent("gui.mcalecs_changed_addon.addon_book_gui_dev_test.button_exit"), e -> {
+		button_exit = new Button(this.leftPos + 4, this.topPos + 169, 46, 20, new TranslatableComponent("gui.mcalecs_changed.addon_book_gui_dev_test.button_exit"), e -> {
 			if (true) {
-				McalecsChangedAddonMod.PACKET_HANDLER.sendToServer(new AddonBookGUIDevTestButtonMessage(1, x, y, z));
+				McalecsChangedMod.PACKET_HANDLER.sendToServer(new AddonBookGUIDevTestButtonMessage(1, x, y, z));
 				AddonBookGUIDevTestButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
 		});
 		guistate.put("button:button_exit", button_exit);
 		this.addRenderableWidget(button_exit);
-		button_time_set_day = new Button(this.leftPos + 82, this.topPos + 138, 87, 20, new TranslatableComponent("gui.mcalecs_changed_addon.addon_book_gui_dev_test.button_time_set_day"), e -> {
+		button_time_set_day = new Button(this.leftPos + 82, this.topPos + 138, 87, 20, new TranslatableComponent("gui.mcalecs_changed.addon_book_gui_dev_test.button_time_set_day"), e -> {
 			if (true) {
-				McalecsChangedAddonMod.PACKET_HANDLER.sendToServer(new AddonBookGUIDevTestButtonMessage(2, x, y, z));
+				McalecsChangedMod.PACKET_HANDLER.sendToServer(new AddonBookGUIDevTestButtonMessage(2, x, y, z));
 				AddonBookGUIDevTestButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
 		});

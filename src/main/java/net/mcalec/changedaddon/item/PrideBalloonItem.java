@@ -9,11 +9,11 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.Entity;
 
 import net.mcalec.changedaddon.procedures.PrideBalloonItemInHandTickProcedure;
-import net.mcalec.changedaddon.init.McalecsChangedAddonModTabs;
+import net.mcalec.changedaddon.init.McalecsChangedModTabs;
 
 public class PrideBalloonItem extends Item {
 	public PrideBalloonItem() {
-		super(new Item.Properties().tab(McalecsChangedAddonModTabs.TAB_MCALECS_CHANGED_TAB).durability(256).fireResistant().rarity(Rarity.UNCOMMON));
+		super(new Item.Properties().tab(McalecsChangedModTabs.TAB_MCALECS_CHANGED_TAB).durability(256).fireResistant().rarity(Rarity.UNCOMMON));
 	}
 
 	@Override

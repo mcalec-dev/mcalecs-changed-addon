@@ -6,7 +6,7 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Item;
 
-import net.mcalec.changedaddon.init.McalecsChangedAddonModTabs;
+import net.mcalec.changedaddon.init.McalecsChangedModTabs;
 
 public class BaseballBatToolItem extends SwordItem {
 	public BaseballBatToolItem() {
@@ -34,6 +34,6 @@ public class BaseballBatToolItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.EMPTY;
 			}
-		}, 3, -2.4f, new Item.Properties().tab(McalecsChangedAddonModTabs.TAB_MCALECS_CHANGED_TAB));
+		}, 3, -2.4f, new Item.Properties().tab(McalecsChangedModTabs.TAB_MCALECS_CHANGED_TAB));
 	}
 }

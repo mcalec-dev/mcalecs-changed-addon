@@ -10,11 +10,11 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 
 import net.mcalec.changedaddon.procedures.AddonBookRightClickedProcedure;
-import net.mcalec.changedaddon.init.McalecsChangedAddonModTabs;
+import net.mcalec.changedaddon.init.McalecsChangedModTabs;
 
 public class AddonBookItem extends Item {
 	public AddonBookItem() {
-		super(new Item.Properties().tab(McalecsChangedAddonModTabs.TAB_MCALECS_CHANGED_TAB).stacksTo(1).rarity(Rarity.RARE));
+		super(new Item.Properties().tab(McalecsChangedModTabs.TAB_MCALECS_CHANGED_TAB).stacksTo(1).rarity(Rarity.RARE));
 	}
 
 	@Override

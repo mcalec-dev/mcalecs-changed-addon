@@ -30,11 +30,11 @@ import net.minecraft.network.protocol.Packet;
 
 import net.mcalec.changedaddon.procedures.IfPlayerIsInWaterProcedure;
 import net.mcalec.changedaddon.procedures.AquaticMovementProcedureProcedure;
-import net.mcalec.changedaddon.init.McalecsChangedAddonModEntities;
+import net.mcalec.changedaddon.init.McalecsChangedModEntities;
 
 public class DevEntityTestEntity extends Monster {
 	public DevEntityTestEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(McalecsChangedAddonModEntities.DEV_ENTITY_TEST.get(), world);
+		this(McalecsChangedModEntities.DEV_ENTITY_TEST.get(), world);
 	}
 
 	public DevEntityTestEntity(EntityType<DevEntityTestEntity> type, Level world) {

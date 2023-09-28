@@ -13,7 +13,7 @@ import net.minecraft.client.Minecraft;
 
 import net.mcalec.changedaddon.world.inventory.AddonBookGUIPage1Menu;
 import net.mcalec.changedaddon.network.AddonBookGUIPage1ButtonMessage;
-import net.mcalec.changedaddon.McalecsChangedAddonMod;
+import net.mcalec.changedaddon.McalecsChangedMod;
 
 import java.util.HashMap;
 
@@ -38,7 +38,7 @@ public class AddonBookGUIPage1Screen extends AbstractContainerScreen<AddonBookGU
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("mcalecs_changed_addon:textures/screens/addon_book_gui_page_1.png");
+	private static final ResourceLocation texture = new ResourceLocation("mcalecs_changed:textures/screens/addon_book_gui_page_1.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -73,7 +73,7 @@ public class AddonBookGUIPage1Screen extends AbstractContainerScreen<AddonBookGU
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, new TranslatableComponent("gui.mcalecs_changed_addon.addon_book_gui_page_1.label_howd_you_get_here"), 39, 68, -12829636);
+		this.font.draw(poseStack, new TranslatableComponent("gui.mcalecs_changed.addon_book_gui_page_1.label_howd_you_get_here"), 39, 68, -12829636);
 	}
 
 	@Override
@@ -86,9 +86,9 @@ public class AddonBookGUIPage1Screen extends AbstractContainerScreen<AddonBookGU
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		button_back = new Button(this.leftPos + 9, this.topPos + 138, 46, 20, new TranslatableComponent("gui.mcalecs_changed_addon.addon_book_gui_page_1.button_back"), e -> {
+		button_back = new Button(this.leftPos + 9, this.topPos + 138, 46, 20, new TranslatableComponent("gui.mcalecs_changed.addon_book_gui_page_1.button_back"), e -> {
 			if (true) {
-				McalecsChangedAddonMod.PACKET_HANDLER.sendToServer(new AddonBookGUIPage1ButtonMessage(0, x, y, z));
+				McalecsChangedMod.PACKET_HANDLER.sendToServer(new AddonBookGUIPage1ButtonMessage(0, x, y, z));
 				AddonBookGUIPage1ButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		});

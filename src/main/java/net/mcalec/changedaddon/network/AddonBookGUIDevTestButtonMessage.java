@@ -15,7 +15,7 @@ import net.mcalec.changedaddon.world.inventory.AddonBookGUIDevTestMenu;
 import net.mcalec.changedaddon.procedures.GUIDevTestUntransfurProcedure;
 import net.mcalec.changedaddon.procedures.GUIDevTestTimeSetProcedure;
 import net.mcalec.changedaddon.procedures.AddonBookGUIButtonCloseProcedure;
-import net.mcalec.changedaddon.McalecsChangedAddonMod;
+import net.mcalec.changedaddon.McalecsChangedMod;
 
 import java.util.function.Supplier;
 import java.util.HashMap;
@@ -80,6 +80,6 @@ public class AddonBookGUIDevTestButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		McalecsChangedAddonMod.addNetworkMessage(AddonBookGUIDevTestButtonMessage.class, AddonBookGUIDevTestButtonMessage::buffer, AddonBookGUIDevTestButtonMessage::new, AddonBookGUIDevTestButtonMessage::handler);
+		McalecsChangedMod.addNetworkMessage(AddonBookGUIDevTestButtonMessage.class, AddonBookGUIDevTestButtonMessage::buffer, AddonBookGUIDevTestButtonMessage::new, AddonBookGUIDevTestButtonMessage::handler);
 	}
 }

@@ -33,8 +33,8 @@ public class TerminatedLabFeature extends Feature<NoneFeatureConfiguration> {
 
 	public static Feature<?> feature() {
 		FEATURE = new TerminatedLabFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("mcalecs_changed_addon:terminated_lab", FEATURE, FeatureConfiguration.NONE);
-		PLACED_FEATURE = PlacementUtils.register("mcalecs_changed_addon:terminated_lab", CONFIGURED_FEATURE, List.of());
+		CONFIGURED_FEATURE = FeatureUtils.register("mcalecs_changed:terminated_lab", FEATURE, FeatureConfiguration.NONE);
+		PLACED_FEATURE = PlacementUtils.register("mcalecs_changed:terminated_lab", CONFIGURED_FEATURE, List.of());
 		return FEATURE;
 	}
 
@@ -57,7 +57,7 @@ public class TerminatedLabFeature extends Feature<NoneFeatureConfiguration> {
 		if (!generate_dimensions.contains(context.level().getLevel().dimension()))
 			return false;
 		if (template == null)
-			template = context.level().getLevel().getStructureManager().getOrCreate(new ResourceLocation("mcalecs_changed_addon", "terminated_lab"));
+			template = context.level().getLevel().getStructureManager().getOrCreate(new ResourceLocation("mcalecs_changed", "terminated_lab"));
 		if (template == null)
 			return false;
 		boolean anyPlaced = false;

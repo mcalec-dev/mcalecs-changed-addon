@@ -1,0 +1,7 @@
+{
+  "parent": "mcalecs_changed:custom/balloon_-_converted",
+  "textures": {
+    "0": "mcalecs_changed:blocks/balloon",
+    "particle": "mcalecs_changed:items/prideballoon"
+  }
+}

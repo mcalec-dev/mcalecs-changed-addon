@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcalec.changedaddon.world.inventory.AddonBookGUIPage1Menu;
 import net.mcalec.changedaddon.procedures.AddonBookGUIMainProcedure;
-import net.mcalec.changedaddon.McalecsChangedAddonMod;
+import net.mcalec.changedaddon.McalecsChangedMod;
 
 import java.util.function.Supplier;
 import java.util.HashMap;
@@ -70,6 +70,6 @@ public class AddonBookGUIPage1ButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		McalecsChangedAddonMod.addNetworkMessage(AddonBookGUIPage1ButtonMessage.class, AddonBookGUIPage1ButtonMessage::buffer, AddonBookGUIPage1ButtonMessage::new, AddonBookGUIPage1ButtonMessage::handler);
+		McalecsChangedMod.addNetworkMessage(AddonBookGUIPage1ButtonMessage.class, AddonBookGUIPage1ButtonMessage::buffer, AddonBookGUIPage1ButtonMessage::new, AddonBookGUIPage1ButtonMessage::handler);
 	}
 }

@@ -3,16 +3,17 @@ loaderVersion="[40,)"
 license="MIT License"
 
 [[mods]]
-modId="mcalecs_changed_addon"
+modId="mcalecs_changed"
 version="0.2"
 displayName="McAlec's Changed Addon"
 credits="McAlec"
 displayURL="https://modrinth.com/mod/mcalecs-changed-addon"
+updateJSONURL="https://raw.githubusercontent.com/McAlec1/McAlecs-Changed-Addon/master/update.json"
 logoFile="logo.png"
 authors="McAlec"
 description="Addon Mod to LtxProgrammer's Changed: MC Mod"
 
-[[dependencies.mcalecs_changed_addon]]
+[[dependencies.mcalecs_changed]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.18.2]"
@@ -20,7 +21,7 @@ description="Addon Mod to LtxProgrammer's Changed: MC Mod"
     side="BOTH"
 
 
-[[dependencies.mcalecs_changed_addon]]
+[[dependencies.mcalecs_changed]]
     modId="changed"
     mandatory=true
     versionRange="[0,)"

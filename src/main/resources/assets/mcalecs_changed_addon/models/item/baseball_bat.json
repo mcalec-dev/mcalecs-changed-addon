@@ -1,6 +1,0 @@
-{
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "mcalecs_changed_addon:items/screenshot_2023-08-23_144851"
-  }
-}

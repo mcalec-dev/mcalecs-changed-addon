@@ -14,7 +14,7 @@ import net.minecraft.core.BlockPos;
 import net.mcalec.changedaddon.world.inventory.AddonBookGUIMenu;
 import net.mcalec.changedaddon.procedures.AddonBookSearchButtonDisplayProcedure;
 import net.mcalec.changedaddon.procedures.AddonBookGUIButtonCloseProcedure;
-import net.mcalec.changedaddon.McalecsChangedAddonMod;
+import net.mcalec.changedaddon.McalecsChangedMod;
 
 import java.util.function.Supplier;
 import java.util.HashMap;
@@ -75,6 +75,6 @@ public class AddonBookGUIButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		McalecsChangedAddonMod.addNetworkMessage(AddonBookGUIButtonMessage.class, AddonBookGUIButtonMessage::buffer, AddonBookGUIButtonMessage::new, AddonBookGUIButtonMessage::handler);
+		McalecsChangedMod.addNetworkMessage(AddonBookGUIButtonMessage.class, AddonBookGUIButtonMessage::buffer, AddonBookGUIButtonMessage::new, AddonBookGUIButtonMessage::handler);
 	}
 }

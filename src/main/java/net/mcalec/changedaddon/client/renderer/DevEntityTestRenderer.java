@@ -15,6 +15,6 @@ public class DevEntityTestRenderer extends MobRenderer<DevEntityTestEntity, Mode
 
 	@Override
 	public ResourceLocation getTextureLocation(DevEntityTestEntity entity) {
-		return new ResourceLocation("mcalecs_changed_addon:textures/entities/skin.png");
+		return new ResourceLocation("mcalecs_changed:textures/entities/skin.png");
 	}
 }
