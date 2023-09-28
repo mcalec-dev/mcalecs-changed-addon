@@ -741,7 +741,7 @@
     "version": "0.2b",
     "description": "Addon Mod to LtxProgrammer\u0027s Changed: MC Mod",
     "author": "McAlec",
-    "websiteURL": "https://modrinth.com/mod/mcalecs-changed-addon",
+    "websiteURL": "https://curseforge.com/minecraft/mc-mods/mcalecs-changed-addon",
     "license": "MIT License",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
