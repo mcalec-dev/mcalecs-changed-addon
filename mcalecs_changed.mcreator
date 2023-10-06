@@ -743,7 +743,7 @@
     "author": "McAlec",
     "websiteURL": "https://curseforge.com/minecraft/mc-mods/mcalecs-changed-addon",
     "license": "MIT License",
-    "disableForgeVersionCheck": true,
+    "disableForgeVersionCheck": false,
     "serverSideOnly": false,
     "updateURL": "https://raw.githubusercontent.com/McAlec1/McAlecs-Changed-Addon/master/update.json",
     "modPicture": "mca-logo",

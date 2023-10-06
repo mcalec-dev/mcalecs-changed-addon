@@ -20,6 +20,12 @@ description="Addon Mod to LtxProgrammer's Changed: MC Mod"
     ordering="NONE"
     side="BOTH"
 
+[[dependencies.mcalecs_changed]]
+    modId="forge"
+    mandatory=true
+    versionRange="[40.1.0]"
+    ordering="NONE"
+    side="BOTH"
 
 [[dependencies.mcalecs_changed]]
     modId="changed"
