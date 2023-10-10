@@ -2,7 +2,7 @@
   "_fv": 47,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Baseball Bat?",
+    "achievementName": "Swing at your desire.",
     "achievementDescription": "You made a baseball bat for those creatures...?",
     "achievementIcon": {
       "value": "CUSTOM:BaseballBatTool"

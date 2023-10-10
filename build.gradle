@@ -76,11 +76,6 @@ repositories {
         name = "Changed"
         url = "https://raw.githubusercontent.com/LtxProgrammer/Changed-Minecraft-Mod/master/mcmodsrepo/"
     }
-    maven {
-		// Changed Addon Plus repo
-    	name = "Changed Addon Plus"
-    	url = "https://raw.githubusercontent.com/Foxyas/Changed-Addon-Rework/master"
-    }
 
   	maven {
 		// Modrinth maven
@@ -108,7 +103,7 @@ dependencies {
     implementation fg.deobf("maven.modrinth:QdG47OkI:EglYgeMq") // Model Gap Fix Mod (Modrinth)
     implementation fg.deobf("maven.modrinth:ZP7xHXtw:WrfRSfUG") // Remove Reloading Screen Mod (Rrls) (Modrinth)
     implementation fg.deobf("maven.modrinth:9s6osm5g:BLMp2TRt") // Cloth Config API Mod (Modrinth)
-    implementation fg.deobf("maven.modrinth:h1E7sQNL:xST7vMlD") // Customizable Player Models Mod (Modrinth)
+    implementation fg.deobf("maven.modrinth:h1E7sQNL:edTNIVIS") // Customizable Player Models Mod (Modrinth)
     implementation fg.deobf("maven.modrinth:t5W7Jfwy:34Zka5Wk") // Pehkui Mod (Modrinth)
     
 }
