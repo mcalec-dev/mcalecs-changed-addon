@@ -1,0 +1,37 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="MIT License"
+issueTrackerURL="https://github.com/mcalec-dev/mcalecs-changed-addon/issues"
+showAsResourcePack=false
+
+[[mods]]
+modId="mcalecs_changed_addon"
+version="1.0a"
+displayName="McAlec's Changed Addon"
+credits="McAlec"
+displayURL="https://curseforge.com/minecraft/mc-mods/mcalecs-changed-addon"
+updateJSONURL="https://git.mcalec.dev/mcalecs-changed-addon/update.json"
+logoFile="logo.png"
+authors="McAlec"
+description="Addon Mod to LtxProgrammer's Changed: MC Mod"
+
+[[dependencies.mcalecs_changed_addon]]
+    modId="forge"
+    mandatory=true
+    versionRange="[40.2.0,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.mcalecs_changed_addon]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2]"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.mcalecs_changed_addon]]
+    modId="changed"
+    mandatory=true
+    versionRange="[0.13.1,)"
+    ordering="NONE"
+    side="BOTH"
